@@ -121,3 +121,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom ignore
+node_modules/
+.DS_Store
+.cache/
+dist/
+coverage/
+.vscode/
+.env
