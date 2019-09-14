@@ -22,3 +22,24 @@ current_year = datetime.datetime.now().year
 year = ((current_year - age) + 100)
 
 print(f"{name} will be 100 years old in the year {year}")
+
+""" 
+-------------------------------------------------------------
+Extras :
+-------------------------------------------------------------
+1. Ask the user for another number and print out that many 
+   copies of the previous message.
+
+2. Print out that many copies of the previous message on 
+   separate lines.
+-------------------------------------------------------------
+ """
+
+another_num = int(input(f"Give me any number? : "))
+
+""" while(another_num > 0):
+    print(f"{name} will be 100 years old in the year {year}")
+    another_num -= 1 """
+
+print(another_num * f"{name} will be 100 years old in the year {year}")
+print(another_num * f"{name} will be 100 years old in the year {year}\n")
