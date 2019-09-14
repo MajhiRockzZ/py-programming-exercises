@@ -6,6 +6,8 @@ Create a program that asks the user to enter their name
 and their age. Print out a message addressed to them that 
 tells them the year that they will turn 100 years old.
 ---------------------------------------------------------
+Concepts : 
+---------------------------------------------------------
 1. input() --> To get user input in Python 3.
 2. int() --> Turn the string into an integer.
 3. str() --> Turn integer into strings.
