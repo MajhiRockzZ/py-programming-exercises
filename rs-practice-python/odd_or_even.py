@@ -1,6 +1,6 @@
 """ 
 ---------------------------------------------------------
-Exercise 1 : 
+Exercise 2 : 
 ---------------------------------------------------------
 Ask the user for a number. Depending on wheteher the 
 number is even or odd, print out an appopriate message 
