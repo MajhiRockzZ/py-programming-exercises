@@ -130,3 +130,5 @@ dist/
 coverage/
 .vscode/
 .env
+.my_env
+my_env/
