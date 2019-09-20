@@ -15,5 +15,5 @@ Concepts :
 ----------------------------------------------------------
  """
 
-name = "Sumesh"
-print(f"Hello {name}")
+name = str(input(f"What is your good name? : "))
+print(f"Hello {name}, nice to meet you!")
