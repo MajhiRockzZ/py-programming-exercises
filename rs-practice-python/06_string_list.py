@@ -16,4 +16,15 @@ Concepts :
  """
 
 name = str(input(f"What is your good name? : "))
-print(f"Hello {name}, nice to meet you!")
+# name = "Sumesh"
+# print(f"Hello {name}, nice to meet you!")
+reverse = ''
+for character in name:
+    reverse = character + reverse
+
+if reverse == name:
+    print(f"The string {name} is an palindrome.")
+else:
+    print(f"The string {name} is not an palindrom, Please try another string.")
+
+# print(reverse)
