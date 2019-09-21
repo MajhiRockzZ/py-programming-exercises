@@ -37,7 +37,7 @@ Solution: Using the string reversal
 wrd = input("Please enter a word")
 wrd = "Sumesh"
 wrd = str(wrd)
-rvs = wrd[::-1]
+rvs = wrd[::-1]  # To reverse a string
 # print(rvs)
 if wrd == rvs:
     print(f"{wrd} is a palindrom")
@@ -49,3 +49,20 @@ else:
 Solution: Using for loops
 ---------------------------------------------------------
  """
+
+
+def reverse(word):
+    x = ''
+    for i in range(len(word)):
+        x += word[len(word)-1-i]
+        return x
+
+
+word = "tnt"
+# word = input(f"give me a word:\n")
+x = reverse(word)
+if x == word:
+    print(f"This is a Palindrome")
+else:
+    print(f"This is NOT a Palindrom")
+    """ Always getting not an palindrom need explanation """
