@@ -28,3 +28,24 @@ else:
     print(f"The string {name} is not an palindrom, Please try another string.")
 
 # print(reverse)
+""" 
+---------------------------------------------------------
+Solution: Using the string reversal
+---------------------------------------------------------
+ """
+
+wrd = input("Please enter a word")
+wrd = "Sumesh"
+wrd = str(wrd)
+rvs = wrd[::-1]
+# print(rvs)
+if wrd == rvs:
+    print(f"{wrd} is a palindrom")
+else:
+    print(f"{wrd} is not a palindrom")
+
+""" 
+---------------------------------------------------------
+Solution: Using for loops
+---------------------------------------------------------
+ """
