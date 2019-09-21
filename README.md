@@ -1,4 +1,4 @@
-# Python Programming Exercises
+# Py Programming Exercises
 
 My day to day coding exercise and solutions.
 
@@ -11,6 +11,8 @@ Practicing my coding skills to get hired in tech.
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
  
 ## Screenshots
+
+![](https://media.giphy.com/media/j3boRD8WIkN8LJTVjh/giphy.gif)
 
 ## Code Example
 
