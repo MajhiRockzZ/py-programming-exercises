@@ -22,7 +22,7 @@ Concepts :
 ----------------------------------------------------------
  """
 
-user1 = input("What's your name?")
+""" user1 = input("What's your name?")
 user2 = input("And your name?")
 
 user1_answer = input(f"{user1} do you want to choose rock, paper or scissors?")
@@ -51,4 +51,44 @@ def compare(u1, u2):
         return("Invalid Input! You have not entered rock, paper or scissors, try again.")
 
 
-print(compare(user1_answer, user2_answer))
+print(compare(user1_answer, user2_answer)) """
+
+
+""" 
+---------------------------------------------------------
+<<<<<<<------- Alternative Solution ------->>>>>>>>>
+---------------------------------------------------------
+ """
+
+print("Please pick one: rock⚡ scissors✂ paper📜")
+
+while True:
+    game_dict = {
+        'rock': 1,
+        'scissors': 2,
+        'paper': 3
+    }
+
+    player_a = str(input("Player a: "))
+    player_b = str(input("Player b: "))
+    a = game_dict.get(player_a)
+    b = game_dict.get(player_b)
+    dif = a - b
+
+    if dif in [-1, 2]:
+        print('player a wins')
+        if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+            continue
+        else:
+            print('game over.')
+            break
+    elif dif in [-2, 1]:
+        print('player b wins.')
+        if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+            continue
+        else:
+            print('game over')
+            break
+    else:
+        print('Draw ⚡ Please continue.')
+        print('')
