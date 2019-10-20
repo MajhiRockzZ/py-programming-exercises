@@ -14,6 +14,7 @@ Concepts :
 ----------------------------------------------------------
  """
 
+
 def array_generator(int_input, rate):
     output_array = []
     arr_ele = 0
@@ -23,7 +24,9 @@ def array_generator(int_input, rate):
         rate = rate - 1
     return output_array
 
+
 random_arr = array_generator(4, 8)
+
 
 def machine(input_arr):
     output_arr = []
@@ -36,5 +39,18 @@ def machine(input_arr):
 
     return output_arr
 
+
 print(random_arr)
 print(machine(random_arr))
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 1 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def list_ends(a_list):
+    return [a_list[0], a_list[len(a_list) - 1]]
+
+print(list_ends(random_arr))
