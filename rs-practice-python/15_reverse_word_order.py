@@ -14,14 +14,16 @@ Concepts :
 ---------------------------------------------------------
  """
 
-input_string = input(f"Please enter a string input ?")
+input_string = input(f"Please enter a string input : ")
 
-def string_reversal(input_string):
-    string_arr = input_string.split()
-    reversed_string = ""
-    for word in input_string:
-        reversed_string = word + reversed_string
+
+def string_reversal(input_str):
+    string_arr = input_str.split()
+    reversed_string = " "
+    for word in string_arr:
+        reversed_string = f"{word} {reversed_string}"
     return reversed_string
+
 
 result = string_reversal(input_string)
 print(result)
