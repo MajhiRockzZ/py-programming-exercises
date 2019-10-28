@@ -27,3 +27,28 @@ def string_reversal(input_str):
 
 result = string_reversal(input_string)
 print(result)
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 1 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def reverseWord(w):
+    return ' '.join(w.split()[::-1])
+
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 2 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def reverse_v1(x):
+    y = x.split()
+    result = []
+    for word in y:
+        result.insert(0, word)
+    return " ".join(result)
