@@ -14,7 +14,7 @@ Concepts :
 ---------------------------------------------------------
  """
 
-input_string = input(f"Please enter a string input : ")
+# input_string = input(f"Please enter a string input : ")
 
 
 def string_reversal(input_str):
@@ -25,8 +25,8 @@ def string_reversal(input_str):
     return reversed_string
 
 
-result = string_reversal(input_string)
-print(result)
+# result = string_reversal(input_string)
+# print(result)
 
 """
 ---------------------------------------------------------
@@ -52,3 +52,48 @@ def reverse_v1(x):
     for word in y:
         result.insert(0, word)
     return " ".join(result)
+
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 3 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def reverse_v2(x):
+    y = x.split()
+    return " ".join(y[::-1])
+
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 4 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def reverse_v3(x):
+    y = x.split()
+    return " ".join(reversed(y))
+
+
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 5 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+
+def reverse_v4(x):
+    y = x.split()
+    y.reverse()
+    return " ".join(y)
+
+
+test1 = input("Enter a sentence : ")
+print(reverse_v1(test1))
+print(reverse_v2(test1))
+print(reverse_v3(test1))
+print(reverse_v4(test1))
+print(reverseWord(test1))
