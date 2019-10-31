@@ -26,3 +26,18 @@ pass_output = "".join(random.sample(pass_combination, pass_length))
 
 print(pass_output)
 
+"""
+---------------------------------------------------------
+  <<<<<<<----- Alternative Solution : 1 ----->>>>>>>>>
+---------------------------------------------------------
+ """
+
+import string
+import random
+
+
+def pw_gen(size=8, chars=string.ascii_letters + string.digits + string.punctuation):
+    return "".join(random.choice(chars) for _ in range(size))
+
+
+print(pw_gen(int(input("How many characters in your password : "))))
