@@ -13,3 +13,11 @@ Concepts :
     3. BeautifulSoup
 ---------------------------------------------------------
  """
+from bs4 import BeautifulSoup
+import requests
+url = "http://github.com"
+r = requests.get(url)
+r_html = r.text
+print(r_html)
+soup = BeautifulSoup(r_html)
+title = soup.find("span", "articletitle").string
