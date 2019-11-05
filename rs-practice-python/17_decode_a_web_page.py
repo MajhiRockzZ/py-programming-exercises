@@ -13,11 +13,15 @@ Concepts :
     3. BeautifulSoup
 ---------------------------------------------------------
  """
-from bs4 import BeautifulSoup
 import requests
-url = "http://github.com"
-r = requests.get(url)
-r_html = r.text
-print(r_html)
-soup = BeautifulSoup(r_html)
-title = soup.find("span", "articletitle").string
+from bs4 import BeautifulSoup
+
+base_url = "http://www.nytimes.com"
+r = requests.get(base_url)
+soup = BeautifulSoup(r.text, 'html.parser')
+
+for story_heading in soup.find_all(class_="story-heading"):
+    if story_heading.a:
+        print(story_heading.a.text.replace("\n", " ").strip())
+    else:
+        print(story_heading.contents[0].strip())
