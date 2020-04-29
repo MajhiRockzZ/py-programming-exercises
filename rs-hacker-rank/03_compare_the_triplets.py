@@ -31,29 +31,57 @@ Sample Output :
 1 1
 """
 
-alice_rating = [5, 6, 7]
-bob_rating = [3, 6, 10]
+# alice_rating = [5, 6, 7]
+# bob_rating = [3, 6, 10]
 
-alice_dict = {}
-bob_dict = {}
+# alice_dict = {}
+# bob_dict = {}
 
-point_table = [0, 0]
+# point_table = [0, 0]
 
-for index, element in enumerate(alice_rating):
-    alice_dict[f"{index}"] = element
+# for index, element in enumerate(alice_rating):
+#     alice_dict[f"{index}"] = element
 
-for index, element in enumerate(bob_rating):
-    bob_dict[f"{index}"] = element
+# for index, element in enumerate(bob_rating):
+#     bob_dict[f"{index}"] = element
 
 
-for index in range(len(alice_dict)):
-    if alice_dict[f"{index}"] == bob_dict[f"{index}"]:
-        pass
-    elif alice_dict[f"{index}"] > bob_dict[f"{index}"]:
-        point_table[0] += 1
-    elif alice_dict[f"{index}"] < bob_dict[f"{index}"]:
-        point_table[1] += 1
-    else:
-        pass
+# for index in range(len(alice_dict)):
+#     if alice_dict[f"{index}"] == bob_dict[f"{index}"]:
+#         pass
+#     elif alice_dict[f"{index}"] > bob_dict[f"{index}"]:
+#         point_table[0] += 1
+#     elif alice_dict[f"{index}"] < bob_dict[f"{index}"]:
+#         point_table[1] += 1
+#     else:
+#         pass
 
-print(point_table)
+# print(point_table)
+
+def compareTheTriplets(player_one_arr, player_two_arr):
+    player_one_dict = {}
+    player_two_dict = {}
+
+    for index, element in enumerate(player_one_arr):
+        player_one_dict[f"{index}"] = element
+
+    for index, element in enumerate(player_two_arr):
+        player_two_dict[f"{index}"] = element
+
+    point_table = [0, 0]
+
+    if len(player_one_dict) == len(player_two_dict):
+        for index in range(len(player_one_dict)):
+            if player_one_dict[f"{index}"] == player_two_dict[f"{index}"]:
+                pass
+            elif player_one_dict[f"{index}"] > player_two_dict[f"{index}"]:
+                point_table[0] += 1
+            elif player_one_dict[f"{index}"] < player_two_dict[f"{index}"]:
+                point_table[1] += 1
+            else:
+                pass
+
+    return point_table
+
+result = compareTheTriplets([17, 28, 30], [99, 16, 8])
+print(result)
